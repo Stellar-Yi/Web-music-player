@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>La La Land</title>
+
+    <!-- jQuery 및 기타 라이브러리 로드 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- CSS 파일 로드 -->
+    <link rel="stylesheet" href="./stylesheet/playerstyle.css" />
+
+</head>
+
+<body>
+    <div class="whole">
+
+        <header>
+            <h1><a href="ticket.html">Moodie</a></h1>
+            <input class="burger-check" type="checkbox" id="burger-check" /><label class="burger-icon"
+                for="burger-check"><span class="burger-sticks"></span></label>
+            <div class="menu" style="background-color: #584299;">
+                <div style="width: 400px;"></div>
+                <h1>MOVIE LIST</h1>
+                <h3><a href="crue.html">CRUELLA</a></h3>
+                <h3><a href="lala.html">LA LA LAND</a></h3>
+                <h3><a href="inter.html">INTERSTELLAR</a></h3>
+                <h3><a href="bohe.html">BOHEMIAN<br>RHAPSODY</a></h3>
+            </div>
+        </header>
+
+        <div class="movietitle">
+            <h1>MOVIE</h1>
+            <h2>LA LA LAND</h2>
+        </div>
+
+        <div class="list-number">02</div>
+        <div class="play-list">
+            <h1>PLAYLIST</h1>
+            <div id="music_list"></div>
+        </div>
+
+
+        <!-- List 부분 -->
+        <img id="spotlight" src="./images/spotlight/lala.png" />
+
+        <!-- List에 들어갈 예시 아이템 -->
+        <div id="example_item" class="item" style="display: none;">
+            <div class="item-img"></div>
+            <div class="item-title">Another Day of Sun</div>
+
+            <!-- 오디오 부분의 구조는 변경시 클래스 이름 주의할 것 -->
+            <audio class="item-audio">
+                <source type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- 재생 부분 -->
+        <div id="player">
+            <div class="player-img"></div>
+            <div></div>
+            <div id="playerControl">
+                <button id="prev"><img src="./images/prev.png" /></button>
+                <button id="pause"><img src="./images/play.png" /></button>
+                <button id="next"><img src="./images/next.png" /></button>
+            </div>
+            <div class="player-progress">
+                <div></div>
+            </div>
+        </div>
+
+        <div id="glitters">
+            <img class="glitter" src="./images/light.svg">
+            <div class="glitter"></div>
+            <img class="glitter" src="./images/light.svg">
+            <div class="glitter"></div>
+            <img class="glitter" src="./images/light.svg">
+            <img class="glitter" src="./images/light.svg">
+            <div class="glitter"></div>
+        </div>
+    </div>
+
+    <!-- Script 파일 로드 -->
+    <script src="./JSsheet/lala.js"></script>
+</body>
+
+</html>
